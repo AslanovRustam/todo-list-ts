@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.name {
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 4px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.name:hover,
+.name:focus {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+.list {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  top: -10px;
+  right: 50px;
+  border: 1px solid var(--color-graySecond);
+  background-color: var(--color-white);
+  border-radius: 4px;
+}
+
+.item {
+  border: 1px solid var(--color-graySecond);
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.item:hover,
+.item:focus {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+.active {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}

@@ -1,0 +1,45 @@
+.item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-light);
+  border-radius: 8px;
+  color: var(--color-gray);
+  transition: var(--transition);
+  border: 1px solid var(--color-graySecond);
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: var(--color-dark);
+  transition: var(--transition);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.item:hover,
+.item:focus {
+  border-color: var(--color-gray);
+}
+.remove {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: var(--font-small);
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.remove:hover,
+.remove:focus {
+  color: var(--color-red);
+}
+.checked {
+  color: var(--color-gray);
+}

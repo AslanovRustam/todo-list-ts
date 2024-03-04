@@ -1,0 +1,21 @@
+.checkbox {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  font-size: var(--font-small);
+  border-radius: 6px;
+  color: var(--color-gray);
+  border: 1px solid rgba(55, 61, 209, 0.2);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.checked {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}

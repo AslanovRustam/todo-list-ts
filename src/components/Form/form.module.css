@@ -1,0 +1,54 @@
+.form {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px 0;
+  position: relative;
+}
+.addIcon {
+  width: 48px;
+}
+.input {
+  width: 100%;
+  height: 56px;
+
+  border-style: none;
+  border-bottom: 1px solid #212121;
+  background-color: transparent;
+
+  padding: 16px;
+  padding-right: 40px;
+  outline: none;
+
+  transition: var(--transition);
+
+  font-size: var(--font-medium);
+  color: var(--color-dark);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+
+  &::placeholder {
+    font-weight: 200;
+  }
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  margin-left: 12px;
+  font-size: var(--font-small);
+  font-weight: bold;
+  color: var(--color-gray);
+  border: 1px solid var(--color-gray);
+  transition: var(--transition);
+}
+.button:hover,
+.button:focus {
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+}
+.button:disabled {
+  border-color: var(--color-gray);
+  color: var(--color-gray);
+}
