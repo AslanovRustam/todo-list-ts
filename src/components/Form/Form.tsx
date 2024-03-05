@@ -32,7 +32,6 @@ const Form = () => {
         className={style.input}
         onChange={handleInput}
         placeholder="Add at least 1 symbol"
-        name="search"
         required
         value={query}
         autoFocus
